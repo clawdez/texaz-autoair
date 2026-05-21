@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TexAz Auto Air — State-of-the-Art Auto Repair | Buda, TX</title>
+  <meta name="description" content="ASE & EPA 609 Certified auto repair in Buda, TX. A/C repair, brakes, oil changes, hose rebuilding. Honest, local, and legit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <div class="nav-logo-icon">TAA</div>
+      <span class="nav-logo-text">TexAz Auto Air</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#services" class="active">Services</a>
+      <a href="#diagnostic">Diagnostics</a>
+      <a href="#queue">Live Queue</a>
+      <a href="#about">About</a>
+      <a href="#book">Book</a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:5129407709" class="nav-phone">(512) 940-7709</a>
+      <a href="#book" class="btn-primary">Book Now</a>
+    </div>
+    <button class="mobile-menu-btn" onclick="document.getElementById('navLinks').classList.toggle('show')">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-top">
+      <div>
+        <div class="hero-label">ASE & EPA 609 Certified</div>
+        <h1 class="hero-title">Your Automotive<br>A/C Specialists</h1>
+        <p class="hero-subtitle">Honest, Small and Local — but we don't play small. Full-service auto repair in Buda, TX.</p>
+        <div class="hero-badges">
+          <span class="badge" id="openBadge"><span class="badge-dot"></span> Open Now</span>
+          <span class="badge">Foreign & Domestic</span>
+          <span class="badge">Same-Day Service</span>
+        </div>
+      </div>
+      <div class="hero-stats-panel">
+        <div class="hero-stat-row">
+          <span class="hero-stat-label">A/C Recharge</span>
+          <span class="hero-stat-value">from $89</span>
+        </div>
+        <div class="hero-stat-row">
+          <span class="hero-stat-label">Oil Change</span>
+          <span class="hero-stat-value">from $39</span>
+        </div>
+        <div class="hero-stat-row">
+          <span class="hero-stat-label">Brake Pads</span>
+          <span class="hero-stat-value">from $149</span>
+        </div>
+        <div class="hero-stat-row">
+          <span class="hero-stat-label">Hose Rebuild</span>
+          <span class="hero-stat-value">from $75</span>
+        </div>
+        <a href="#book" class="btn-primary" style="width:100%;justify-content:center;margin-top:12px;">Get Your Car Cooler Today &#x2192;</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-visual-inner">
+        <span class="hero-watermark">TEXAZ</span>
+        <div class="hero-visual-overlay">
+          <div class="hero-visual-stat"><span>R134a</span></div>
+          <div class="hero-visual-stat"><span>R1234yf</span></div>
+          <div class="hero-visual-stat active"><span>All Systems</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE CARDS -->
+  <div class="service-cards" id="services">
+    <div class="service-card">
+      <div class="sc-header">
+        <div class="sc-icon">&#x2744;</div>
+        <span class="sc-price">from $89</span>
+      </div>
+      <h3 class="sc-title">Auto A/C Repair</h3>
+      <p class="sc-desc">We service and repair most automotive air conditioning systems including R1234yf systems. Full diagnostics, leak detection, compressor repair, and recharging.</p>
+      <div class="sc-tags">
+        <span class="sc-tag active">R134a</span>
+        <span class="sc-tag">R1234yf</span>
+        <span class="sc-tag">Leak Test</span>
+        <span class="sc-tag">Compressor</span>
+        <span class="sc-tag">Evaporator</span>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="sc-header">
+        <div class="sc-icon">&#x1F6D1;</div>
+        <span class="sc-price">from $149</span>
+      </div>
+      <h3 class="sc-title">Brake Repair</h3>
+      <p class="sc-desc">We service and repair most automotive brake systems. Pads, rotors, calipers, brake fluid flush. Your safety is non-negotiable — we don't cut corners.</p>
+      <div class="sc-tags">
+        <span class="sc-tag active">Pad Swap</span>
+        <span class="sc-tag">Rotors</span>
+        <span class="sc-tag">Fluid Flush</span>
+        <span class="sc-tag">Calipers</span>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="sc-header">
+        <div class="sc-icon">&#x1F6E2;</div>
+        <span class="sc-price">from $39</span>
+      </div>
+      <h3 class="sc-title">Oil Change</h3>
+      <p class="sc-desc">We will change your oil to keep your car running smoothly. Filter included every time. Multi-point inspection included so you know where your car stands.</p>
+      <div class="sc-tags">
+        <span class="sc-tag">Conventional</span>
+        <span class="sc-tag active">Syn. Blend</span>
+        <span class="sc-tag">Full Synthetic</span>
+        <span class="sc-tag">Diesel</span>
+      </div>
+    </div>
+    <div class="service-card">
+      <div class="sc-header">
+        <div class="sc-icon">&#x1F527;</div>
+        <span class="sc-price">from $75</span>
+      </div>
+      <h3 class="sc-title">Hose Rebuilding</h3>
+      <p class="sc-desc">We can rebuild most air conditioning and hydraulic hoses quickly to get you back to work or on the road. Same-day service on most hoses — built on-site.</p>
+      <div class="sc-tags">
+        <span class="sc-tag active">A/C Hose</span>
+        <span class="sc-tag">Hydraulic</span>
+        <span class="sc-tag">Custom Fab</span>
+        <span class="sc-tag">Same-Day</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- VEHICLE DIAGNOSTIC DASHBOARD -->
+  <section class="section" id="diagnostic">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Vehicle Diagnostic Report</h2>
+        <p class="section-sub">Every vehicle gets a full inspection. Here's what a typical report looks like.</p>
+      </div>
+      <div class="diag-tabs">
+        <span class="diag-tab active">A/C System</span>
+        <span class="diag-tab">Brakes</span>
+        <span class="diag-tab">Engine</span>
+        <span class="diag-tab">Fluids</span>
+      </div>
+    </div>
+
+    <div class="diag-grid">
+      <!-- Left: Vehicle Info -->
+      <div class="diag-vehicle-card">
+        <div class="diag-vehicle-header">
+          <div>
+            <h3>2022 Toyota Camry SE</h3>
+            <p class="diag-vehicle-sub">4-Cylinder 2.5L &bull; 47,230 miles &bull; Buda, TX</p>
+          </div>
+          <span class="diag-ticket">#TAA-0847</span>
+        </div>
+        <div class="diag-vehicle-tags">
+          <span class="badge">Customer: Maria S.</span>
+          <span class="badge">Drop-off: 8:15 AM</span>
+          <span class="badge"><span class="badge-dot"></span> In Progress</span>
+        </div>
+
+        <div class="diag-vehicle-visual">
+          <span class="diag-car-text">CAMRY</span>
+          <div class="diag-point" style="top:30%;left:25%;" data-label="Compressor: OK">
+            <span class="diag-point-dot green"></span>
+          </div>
+          <div class="diag-point" style="top:45%;left:60%;" data-label="Condenser: Leak Detected">
+            <span class="diag-point-dot red"></span>
+          </div>
+          <div class="diag-point" style="top:60%;left:40%;" data-label="Refrigerant: Low (62%)">
+            <span class="diag-point-dot amber"></span>
+          </div>
+          <div class="diag-point" style="top:35%;left:78%;" data-label="Cabin Filter: Replace">
+            <span class="diag-point-dot amber"></span>
+          </div>
+        </div>
+
+        <div class="diag-complaint">
+          <strong>Customer Complaint:</strong> "A/C blows warm air after 10 minutes of driving. Gets worse in traffic."
+        </div>
+      </div>
+
+      <!-- Right: Report Panel -->
+      <div class="diag-report">
+        <div class="diag-report-header">
+          <div class="diag-report-tabs">
+            <span class="drt active">Inspection <span class="drt-count">6</span></span>
+            <span class="drt">Issues <span class="drt-count red">3</span></span>
+            <span class="drt">History</span>
+          </div>
+          <button class="btn-outline">View Report</button>
+        </div>
+
+        <!-- Condition Breakdown -->
+        <div class="diag-condition">
+          <h4>System Condition</h4>
+          <div class="diag-donut-area">
+            <div class="diag-donut">
+              <svg viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" fill="none" stroke="#e5e5e5" stroke-width="8"/>
+                <circle cx="50" cy="50" r="40" fill="none" stroke="#22c55e" stroke-width="8" stroke-dasharray="125.6 125.6" stroke-dashoffset="0" transform="rotate(-90 50 50)"/>
+                <circle cx="50" cy="50" r="40" fill="none" stroke="#f59e0b" stroke-width="8" stroke-dasharray="75.4 175.8" stroke-dashoffset="-125.6" transform="rotate(-90 50 50)"/>
+                <circle cx="50" cy="50" r="40" fill="none" stroke="#ef4444" stroke-width="8" stroke-dasharray="50.2 200.9" stroke-dashoffset="-201" transform="rotate(-90 50 50)"/>
+              </svg>
+              <div class="diag-donut-center">
+                <span class="diag-donut-pct">68%</span>
+                <span class="diag-donut-label">Health</span>
+              </div>
+            </div>
+            <div class="diag-donut-legend">
+              <div class="diag-legend-item"><span class="dl-dot green"></span> Good — 50%</div>
+              <div class="diag-legend-item"><span class="dl-dot amber"></span> Attention — 30%</div>
+              <div class="diag-legend-item"><span class="dl-dot red"></span> Needs Repair — 20%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Potential Expenses -->
+        <div class="diag-expenses">
+          <div class="diag-exp-header">
+            <h4>Recommended Services</h4>
+            <span class="diag-exp-total">$487 <span>estimated</span></span>
+          </div>
+          <div class="diag-exp-list">
+            <div class="diag-exp-item">
+              <div class="diag-exp-rank">1</div>
+              <div class="diag-exp-info">
+                <strong>Condenser Replacement</strong>
+                <span>Leak detected at condenser — causing refrigerant loss</span>
+              </div>
+              <div class="diag-exp-cost">$285</div>
+              <div class="diag-exp-urgency high">Urgent</div>
+            </div>
+            <div class="diag-exp-item">
+              <div class="diag-exp-rank">2</div>
+              <div class="diag-exp-info">
+                <strong>A/C Recharge (R134a)</strong>
+                <span>Refrigerant at 62% — recharge after condenser fix</span>
+              </div>
+              <div class="diag-exp-cost">$89</div>
+              <div class="diag-exp-urgency high">Urgent</div>
+            </div>
+            <div class="diag-exp-item">
+              <div class="diag-exp-rank">3</div>
+              <div class="diag-exp-info">
+                <strong>Cabin Air Filter</strong>
+                <span>Dirty filter reducing airflow — easy swap</span>
+              </div>
+              <div class="diag-exp-cost">$35</div>
+              <div class="diag-exp-urgency med">Soon</div>
+            </div>
+            <div class="diag-exp-item">
+              <div class="diag-exp-rank">4</div>
+              <div class="diag-exp-info">
+                <strong>System Vacuum & Leak Test</strong>
+                <span>Post-repair verification to confirm no leaks</span>
+              </div>
+              <div class="diag-exp-cost">$78</div>
+              <div class="diag-exp-urgency med">Included</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE QUEUE -->
+  <section class="section" id="queue">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">Live Service Queue</h2>
+        <p class="section-sub">Real-time status of vehicles in our shop</p>
+      </div>
+      <span class="badge"><span class="badge-dot"></span> Updated live</span>
+    </div>
+    <div class="queue-grid">
+      <div class="queue-card">
+        <div class="q-status in-bay"><span class="q-dot"></span> Bay 1</div>
+        <div class="q-car">2022 Toyota Camry</div>
+        <div class="q-service">A/C Condenser + Recharge</div>
+        <div class="q-bar"><div class="q-fill" style="width:75%;background:#3b82f6;"></div></div>
+        <div class="q-eta">ETA: ~45 min remaining</div>
+      </div>
+      <div class="queue-card">
+        <div class="q-status diag"><span class="q-dot"></span> Diagnosing</div>
+        <div class="q-car">2019 Ford F-150</div>
+        <div class="q-service">A/C Intermittent Cooling</div>
+        <div class="q-bar"><div class="q-fill" style="width:30%;background:#8b5cf6;"></div></div>
+        <div class="q-eta">ETA: ~1.5 hrs</div>
+      </div>
+      <div class="queue-card">
+        <div class="q-status waiting"><span class="q-dot"></span> Waiting</div>
+        <div class="q-car">2021 Honda Accord</div>
+        <div class="q-service">Brake Pads + Rotors (Front)</div>
+        <div class="q-bar"><div class="q-fill" style="width:5%;background:#f59e0b;"></div></div>
+        <div class="q-eta">ETA: ~3 hrs</div>
+      </div>
+      <div class="queue-card">
+        <div class="q-status ready"><span class="q-dot"></span> Ready</div>
+        <div class="q-car">2020 Chevy Tahoe</div>
+        <div class="q-service">Oil Change + Multi-Point</div>
+        <div class="q-bar"><div class="q-fill" style="width:100%;background:#22c55e;"></div></div>
+        <div class="q-eta">Ready for pickup</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="about-grid">
+      <div class="about-main">
+        <h2>Honest, Small<br>and Local.</h2>
+        <p>TexAz Auto Air is an ASE and EPA 609 certified shop in Buda, TX. We diagnose and repair most foreign and domestic automobiles. We specialize in automotive air conditioning but handle everything from brakes to oil changes to custom hose fabrication. Every vehicle gets treated like it's our own.</p>
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="about-stat-num">500+</span>
+            <span class="about-stat-lbl">Cars Serviced</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-num">4.9</span>
+            <span class="about-stat-lbl">Google Rating</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-num">2</span>
+            <span class="about-stat-lbl">Certifications</span>
+          </div>
+          <div class="about-stat">
+            <span class="about-stat-num">100%</span>
+            <span class="about-stat-lbl">Honest Pricing</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-certs">
+        <div class="cert-card">
+          <div class="cert-icon">&#x1F3C6;</div>
+          <strong>ASE Certified</strong>
+          <span>National Institute for Automotive Service Excellence</span>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">&#x1F30D;</div>
+          <strong>EPA 609 Certified</strong>
+          <span>Licensed to handle all refrigerant types safely</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">What Customers Say</h2>
+        <p class="section-sub">Real reviews from real people</p>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="r-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Brought my truck in for A/C work. They diagnosed the issue in 20 minutes and had it fixed same day. Fair price, no upselling. This is my shop now."</p>
+        <strong>Marcus T.</strong>
+        <span>2019 Ford F-150 &bull; A/C Repair</span>
+      </div>
+      <div class="review-card">
+        <div class="r-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Finally a mechanic I trust. They showed me exactly what was wrong, explained the fix, and didn't charge me for stuff I didn't need. Rare these days."</p>
+        <strong>Sarah L.</strong>
+        <span>2021 Toyota Camry &bull; Brakes</span>
+      </div>
+      <div class="review-card">
+        <div class="r-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"A/C went out in July. In Texas. They got me in same day and had it blowing ice cold by lunch. Legit operation, great people."</p>
+        <strong>David R.</strong>
+        <span>2020 Chevy Silverado &bull; A/C Recharge</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section" id="book">
+    <div class="booking-section">
+      <div class="booking-left">
+        <h2>Book Your Service</h2>
+        <p>Drop your info and we'll get you scheduled. Same-day appointments available for most services.</p>
+        <div class="booking-details">
+          <div class="b-detail"><div class="b-icon">&#x1F4CD;</div><div><strong>265 Downstream Lane</strong><br><span>Buda, TX 78610</span></div></div>
+          <div class="b-detail"><div class="b-icon">&#x1F4DE;</div><div><strong>(512) 940-7709</strong><br><span>Call or text anytime</span></div></div>
+          <div class="b-detail"><div class="b-icon">&#x1F552;</div><div><strong>Mon–Fri 8am–5pm</strong><br><span>Sat 9am–3pm &bull; Sun Closed</span></div></div>
+          <div class="b-detail"><div class="b-icon">&#x2709;</div><div><strong>Texazautoair@gmail.com</strong><br><span>Email us anytime</span></div></div>
+        </div>
+      </div>
+      <form class="booking-form" onsubmit="event.preventDefault();this.querySelector('.form-submit').textContent='Sent! We\'ll call you.';this.querySelector('.form-submit').style.background='#22c55e';">
+        <div class="form-row">
+          <input type="text" class="form-input" placeholder="Your Name" required>
+          <input type="tel" class="form-input" placeholder="Phone Number" required>
+        </div>
+        <input type="email" class="form-input" placeholder="Email (optional)">
+        <div class="form-row">
+          <input type="text" class="form-input" placeholder="Year, Make, Model" required>
+          <select class="form-input" required>
+            <option value="" disabled selected>Select Service</option>
+            <option>A/C Repair & Recharge</option>
+            <option>Brake Service</option>
+            <option>Oil Change</option>
+            <option>Hose Rebuilding</option>
+            <option>General Repair</option>
+            <option>Diagnostics Only</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <textarea class="form-input" placeholder="Describe the issue — what's happening, when did it start?"></textarea>
+        <button type="submit" class="form-submit">Request Appointment &#x2192;</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand"><h3>TexAz Auto Air</h3><p>Honest, small and local. ASE & EPA 609 certified auto repair in Buda, TX. Foreign and domestic — we work on everything.</p></div>
+    <div class="footer-col"><h4>Services</h4><a href="#services">A/C Repair</a><a href="#services">Brake Service</a><a href="#services">Oil Changes</a><a href="#services">Hose Rebuilding</a><a href="#services">General Repair</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="#about">About Us</a><a href="#reviews">Reviews</a><a href="#queue">Live Queue</a><a href="#diagnostic">Diagnostics</a></div>
+    <div class="footer-col"><h4>Contact</h4><a href="tel:5129407709">(512) 940-7709</a><a href="mailto:Texazautoair@gmail.com">Email Us</a><a href="https://www.facebook.com/profile.php?id=61565420666008" target="_blank">Facebook</a><a>265 Downstream Ln, Buda TX</a></div>
+  </footer>
+  <div class="footer-bottom">&copy; 2026 TexAz Auto Air. All rights reserved.</div>
+
+  <!-- FLOATING CTA -->
+  <div class="cta-bar">
+    <a href="tel:5129407709">&#x1F4DE; (512) 940-7709</a>
+    <div class="cta-div"></div>
+    <a href="#book">Book Now &#x2192;</a>
+  </div>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'});document.getElementById('navLinks').classList.remove('show');});});
+    // Open/Closed badge
+    (function(){const n=new Date(),d=n.getDay(),h=n.getHours(),b=document.getElementById('openBadge');const o=(d>=1&&d<=5&&h>=8&&h<17)||(d===6&&h>=9&&h<15);if(!o){b.innerHTML='<span class="badge-dot" style="background:#ef4444"></span> Closed';}})();
+    // Diagnostic point tooltips
+    document.querySelectorAll('.diag-point').forEach(p=>{p.addEventListener('mouseenter',()=>{const l=p.dataset.label;const t=document.createElement('div');t.className='diag-tooltip';t.textContent=l;p.appendChild(t);});p.addEventListener('mouseleave',()=>{const t=p.querySelector('.diag-tooltip');if(t)t.remove();});});
+  </script>
+</body>
+</html>
